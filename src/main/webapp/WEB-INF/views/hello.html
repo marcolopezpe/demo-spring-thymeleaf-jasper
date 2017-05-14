@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	  xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Hello Spring MVC</title>
+</head>
+<body>
+	<h1>Hello <span th:text="${name}"></span>!</h1>
+	<a th:href="@{/invoice?format=xls}">Descargar Excel</a>
+	<a th:href="@{/invoice?format=pdf}">Descargar PDF</a>
+	<a th:href="@{/reportxls}">Descargar XLS 2</a>
+</body>
+</html>
